@@ -2,6 +2,8 @@ require_relative 'parsers/base'
 require_relative 'parsers/facebook'
 require_relative 'parsers/google_plus'
 require_relative 'parsers/instagram'
+require_relative 'parsers/foursquare'
+require_relative 'parsers/klout'
 require_relative 'parsers/blogger'
 require_relative 'parsers/ameba'
 require_relative 'parsers/hi5'
@@ -28,6 +30,8 @@ class IdsPlease
       twitter: IdsPlease::Parsers::Twitter,
       facebook: IdsPlease::Parsers::Facebook,
       instagram: IdsPlease::Parsers::Instagram,
+      foursquare: IdsPlease::Parsers::Foursquare,
+      klout: IdsPlease::Parsers::Klout,
       blogger: IdsPlease::Parsers::Blogger,
       ameba: IdsPlease::Parsers::Ameba,
       hi5: IdsPlease::Parsers::Hi5,
