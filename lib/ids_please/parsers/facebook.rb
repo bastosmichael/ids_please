@@ -10,7 +10,7 @@ class IdsPlease
 
           if query && !query['id'].empty?
             query['id'].first
-          elsif link.path =~ /\/pages\//
+          elsif link.path =~ /\/pages\// || link.path =~ /\/app_scoped_user_id\//
             link.path.split('/').last
           else
             link.path.split('/')[1]
